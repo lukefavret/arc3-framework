@@ -1,0 +1,32 @@
+# {{ meta.title }}
+
+{% for s in sections %}
+{% if s.get('heading') %}
+
+---
+## {{ s.heading }}
+{% endif %}
+{% for b in s.blocks %}
+{% if b.get('kind') == "callout" -%}
+### {{ {
+  'info':'ℹ️','warning':'⚠️','question':'❓','bug':'🐞','target':'🎯','abstract':'🧩','todo':'📝'
+}.get(b.get('type'), 'ⓘ') }} {{ b.get('title') }}
+{%- if b.get('body') %}
+
+{{ b.get('body') }}
+{%- endif %}
+{%- if b.get('items') %}
+{%- for it in b.get('items') %}
+- {{ it }}
+{%- endfor %}{% endif -%}
+{%- if b.get('checklist') %}
+{%- for it in b.get('checklist') %}
+- [ ] {{ it }}
+{%- endfor %}{% endif -%}
+
+{%- elif b.get('kind') == "paragraph" -%}
+{{ b.get('body') }}
+
+{%- endif %}
+{% endfor %}
+{% endfor %}
