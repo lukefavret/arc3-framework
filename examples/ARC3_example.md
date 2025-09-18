@@ -1,8 +1,8 @@
 ---
-title: <% tp.file.title %>
+title: ARC³ Case: Self-Study
 status: "✅ Completed"                            # "💡 Idea" | "🚧 In Progress" | "🔍 Review" | "✅ Completed"
 project_type: ""                                  # "🎓 Academic" | "🏢 Industry" | "🌱 Personal/Speculative"
-mode: "Standard"                                  # "Standard" | "Qual" | "Lite"
+mode: "Standard"                                  # "Standard" | "Qual" | "Lite" 
 design_type: ""                                   # e.g., "between-subjects, randomized, counterbalanced"
 date_created: <% tp.date.now("YYYY-MM-DD") %>
 last_updated: <% tp.date.now("YYYY-MM-DD") %>
@@ -80,23 +80,31 @@ Interpret STAR for a general reader. No new metrics. Mention the single most dec
 - [ ] Define **3–5** falsifiable hypotheses with success criteria + data sources
 
 ## A.1 Provocation & Problem
-[!bug] **Core challenge** — Clearly articulate the problem you are addressing. Frame it from a human-centered perspective. What pain point, inefficiency, or unmet need exists? Where possible, connect this to a real-world observation from your professional or personal experience to add authenticity.
+[!bug] **Core challenge** — Creators, designers, and applied researchers lack a rigorous, repeatable way to document case studies. Authors often reconstruct narratives from incomplete artifacts, producing variable quality and “story-only” write-ups that underperform on evidence and reproducibility. For applied academics, the IMRaD paper format rarely captures iterative, builder-style prototyping and can alienate industry readers.
 
-[!question] **“What-if?”** — the provocation or assumption you test. this is your hook, or how you "sell" your audience. 
-For industry case studies: What issue are you trying to adress? Why is it an issue for your company or user-base? How does this interact with current industry or cross-industry norms and (when legal) your competitors?
 
-For prototyping: What is the core provocation or "what if" question driving this project? What established assumption are you challenging? This is your hook.  
 
-For research: What academic theory or design framework (e.g., Critical Design, Situated Action) informs your approach? Cite 1-2 key papers or thinkers. How does your work enter into a conversation with existing research?
+draft: The lack of a rigorous framework for documenting case studies presents a core challenge for creators, designers, and researchers. While case studies are essential for narrating the journey of a product or project—from initial problem to final impact—their current creation process is often inconsistent and unreliable.
 
-When possible, tailor this section for your audience and the narrative you seek to tell. For example, if I were to create a case study to showcase my HCI skills, I'd want to answer:  How does this project live at the intersection of technology and human cognition? (e.g., "This project explores how the 'Peak-End Rule' \[Psych\_Concept::\] can inform the design of asynchronous communication systems to reduce cognitive load.")
+The central issue is that writers are frequently left to build their narrative from scratch, relying on artifacts they may not have proactively preserved. This results in significant variability in quality and content. Furthermore, many case studies function as mere narratives, lacking the evidentiary rigor found in academic papers.
+
+For academics in applied sciences, this problem is compounded. The standard academic paper format, while robust for theoretical research, often fails to adequately capture the iterative, "builder-type" process of creating prototypes. This can alienate industry audiences and obscure the practical, hands-on insights that are most valuable. A new, more rigorous framework is needed to bridge this gap, ensuring that case studies are both comprehensive and compelling.
+
+[!question] **“What-if?”** — What if a single case-study framework could measurably improve (1) authoring efficiency, (2) evidentiary rigor/reliability, and (3) cross-audience clarity compared with current practice?
 
 ## A.2 Prior Art & Theory
 [!search] 1–2 key works; how this project enters that conversation.
+Perhaps the closest thing we currently have to a standardized case study framework is that of the STAR method.
 
 ## A.3 Audience, Assumptions, Constraints
 [!users] Audience: who, goals, context.  
+Primary: Individual practitioners (UX/HCI, prototypers, research engineers) writing portfolio-grade cases.
+
+Secondary: Applied academics exporting work to industry and hiring committees reviewing rigor at a glance.
+
 [!key] Assumptions & constraints: foundational beliefs and hard bounds.
+- Authors will use a lightweight rubric and a validator; pilot reviewers can rate clarity/rigor in <10 minutes.  
+- One template can serve both audiences if outcomes are tested and evidence is traceable.
 
 ## A.4 Hypotheses & Success Criteria (contract for C.1)
 [!target] **Each hypothesis → 1 criterion with OWNER + DATA SOURCE. Every criterion must appear in C.1.**
