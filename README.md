@@ -1,5 +1,6 @@
 # ARC³ Case Framework — Release v3
 
+WIP-you are viewing a messy internal prototype undergoing change.
 This bundle supersedes older templates. It includes:
 - **Release Template (Obsidian/MD)** with STAR + Executive Summary, A/R/C, strict **A.4 → C.1** mapping, validity checklist, and continuation block.
 - **Public Template (MD + RTF)** for Word/Docs/Pages.
